@@ -1,0 +1,19 @@
+# Visual Studio
+.vs/
+bin/
+obj/
+Debug/
+Release/
+
+# Archivos de usuario
+*.user
+*.suo
+
+# Resultados de compilación
+*.dll
+*.exe
+*.pdb
+
+# Archivos de configuración local
+appsettings.Development.json
+appsettings.Production.json
