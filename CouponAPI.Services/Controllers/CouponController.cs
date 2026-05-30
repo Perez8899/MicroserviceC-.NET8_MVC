@@ -21,7 +21,7 @@ namespace CouponAPI.Services.Controllers
             _response = new ResponseDto();
         }
 
-
+        //-----------------------------------------------------------------------------------
         [HttpGet]
         public ResponseDto Get()
         {
@@ -48,7 +48,7 @@ namespace CouponAPI.Services.Controllers
             return _response;
         }
 
-
+        //-----------------------------------------------------------------------------------
         [HttpGet]
         [Route("{id:int}")]
         public ResponseDto Get(int id)
@@ -76,6 +76,7 @@ namespace CouponAPI.Services.Controllers
             return _response;
         }
 
+        //-----------------------------------------------------------------------------------
         [HttpGet]
         [Route("GetByCode/{code}")]
         public ResponseDto GetByCode(string code)
@@ -103,7 +104,7 @@ namespace CouponAPI.Services.Controllers
             return _response;
         }
 
-
+        //-----------------------------------------------------------------------------------
         [HttpPost]
         public ResponseDto Post([FromBody] CouponDto couponDto)
         {
@@ -125,7 +126,7 @@ namespace CouponAPI.Services.Controllers
             return _response;
         }
 
-
+        //-----------------------------------------------------------------------------------
         [HttpPut]
         public ResponseDto put([FromBody] CouponDto couponDto)
         {
@@ -147,7 +148,7 @@ namespace CouponAPI.Services.Controllers
             return _response;
         }
 
-
+        //-----------------------------------------------------------------------------------
         [HttpDelete]
         public ResponseDto Delete(int id)
         {
