@@ -17,7 +17,7 @@ namespace CouponAPI.Services.Data
             
             modelBuilder.Entity<Models.Coupon>().HasData(
                 new Models.Coupon { CouponId = 1, CouponCode = "SAVE10", DiscountAmount = 10.0, MinAmount = "50" },
-                new Models.Coupon { CouponId = 2, CouponCode = "SAVE20", DiscountAmount = 20.0, MinAmount = "100" },
+                new Models.Coupon { CouponId = 2, CouponCode = "SAVE20", DiscountAmount = 20.0, MinAmount = "100"},
                 new Models.Coupon { CouponId = 3, CouponCode = "SAVE30", DiscountAmount = 30.0, MinAmount = "150" }
             );
         }
