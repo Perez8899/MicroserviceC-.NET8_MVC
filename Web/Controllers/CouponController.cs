@@ -39,7 +39,7 @@ namespace Web.Controllers
                 ResponseDto? response = await _couponService.CreateCouponAsync(model);
                 if (response != null && response.IsSuccess)
                 {
-                    TempData["success"] = response.Message ?? "Coupon create Successfully! ";
+                    TempData["success"] = response.Message;
                     return RedirectToAction(nameof(CouponIndex));
                 }
                 else

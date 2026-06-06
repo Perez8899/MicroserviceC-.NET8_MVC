@@ -1,19 +1,19 @@
 ﻿@model IEnumerable<CouponDto>
 
-@* Mostrar mensajes de éxito/error *@
 @if (TempData["success"] != null)
 {
 	<div class="alert alert-success alert-dismissible fade show" role="alert">
-		<i class="bi bi-check-circle-fill"></i> @TempData["success"]
-		<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-	</div>
+		<i class="bi bi-check-circle-fill"></i> 
+		@TempData["success"]
+		<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> 
+	 </div>
 }
 
 @if (TempData["error"] != null)
 {
 	<div class="alert alert-danger alert-dismissible fade show" role="alert">
 		<i class="bi bi-exclamation-triangle-fill"></i> @TempData["error"]
-		<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+		<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> 
 	</div>
 }
 
@@ -58,7 +58,7 @@
 						@item.CouponCode
 					</td>
 					<td> 
-						@item.DiscountAmount.ToString("c", System.Globalization.CultureInfo.CurrentCulture)
+							@((item.DiscountAmount).ToString("c"))
 					</td>
 					<td>
 							@((item.MinAmount).ToString("c"))
