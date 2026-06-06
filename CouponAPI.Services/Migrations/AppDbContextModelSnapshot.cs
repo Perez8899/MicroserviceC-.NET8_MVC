@@ -42,7 +42,7 @@ namespace CouponAPI.Services.Migrations
 
                     b.HasKey("CouponId");
 
-                    b.ToTable("Coupons");
+                    b.ToTable("Coupons", (string)null);
 
                     b.HasData(
                         new
